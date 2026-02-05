@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Станешь моей валентинкой?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@300;400;600&family=Pacifico&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="particles-container"></div>
+    <div id="explosion-container"></div>
+
+    <div id="app" class="glass-container">
+        <!-- Home State -->
+        <div id="home-view" class="view active">
+            <h1 class="title">Станешь моей валентинкой? ❤️</h1>
+            <div class="button-group">
+                <button id="yes-btn" class="btn btn-primary">Да!</button>
+                <button id="no-btn" class="btn btn-secondary">Нет</button>
+            </div>
+        </div>
+
+        <!-- Prank View -->
+        <div id="prank-view" class="view">
+            <div class="prank-content">
+                <h2 id="prank-message" class="prank-title">Ты серьезно? 🤨</h2>
+                <div id="prank-emoji" class="prank-emoji">😡😠😤</div>
+            </div>
+        </div>
+
+        <!-- Success View -->
+        <div id="success-view" class="view">
+            <h1 class="success-title">Ура! Я так и знал!</h1>
+            <p class="love-text">Люблю тебя, мое солнце!</p>
+            <p id="poetic-text" class="poetic-text"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
